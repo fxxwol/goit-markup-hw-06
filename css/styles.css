@@ -445,12 +445,13 @@ header {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--white);
+  transition: border 250ms var(--cubic);
 }
 
 .footer-email:focus-visible {
-  outline: 1px solid var(--white);
+  outline: none;
+  border: 1px solid var(--white);
 }
-
 .footer-email::placeholder {
   font-size: 12px;
   line-height: 2;
