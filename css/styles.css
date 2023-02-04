@@ -603,7 +603,7 @@ header {
 }
 
 .form-field:focus-within .form-input,
-.form-field:focus-within .comment,
+.comment:focus-within,
 .form-field:focus-within .form-icon {
   border-color: var(--accent-color);
   fill: var(--accent-color);
@@ -677,27 +677,23 @@ header {
   overflow: hidden;
 }
 
-.checkbox-field {
+.checkbox-icon {
   display: flex;
   align-items: center;
-}
-
-.checkbox-icon {
+  justify-content: center;
   width: 16px;
   height: 16px;
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
   margin-right: 8px;
+  transition: background-color 300ms linear;
+  fill: transparent;
 }
 
 .checkbox:checked + .checkbox-icon {
   background-color: #404bbf;
-  border-color: #404bbf;
-  background-image: url(../images/check.svg);
-  background-size: 10px 8px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
+  border: none;
+  fill: #ffffff;
 }
 
 .checkbox:focus + .checkbox-icon {
@@ -705,6 +701,8 @@ header {
 }
 
 .checkbox-label {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;

@@ -470,7 +470,7 @@
                     </svg>
                   </span >
                 </label>
-                <label class="form-field">
+                <label>
                   <span class="form-label">Comment</span>
                   <textarea
                     name="comment"
@@ -479,18 +479,22 @@
                   ></textarea>
                 </label>
               </div>
-              <label class="checkbox-field">
+              <label class="checkbox-label">
                 <input
                   type="checkbox"
                   name="policy"
                   class="checkbox"
                   value="aggreed"
                 />
-                <span class="checkbox-icon"></span>
-                <span class="checkbox-label">
-                  I accept the terms and conditions of the
-                  <a href="" class="policy-link">Privacy Policy</a>
+                <span class="checkbox-icon">
+                  <svg width="10" height="8">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
                 </span>
+                 <span>
+                    I accept the terms and conditions of the 
+                    <a href="" class="policy-link"> Privacy Policy</a>
+                 </span >
               </label>
               <button type="submit" class="btn send">Send</button>
             </form>
